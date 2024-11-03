@@ -13,6 +13,10 @@ AC_PSPDEV_PATH
 AM_INIT_AUTOMAKE([1.14 foreign])
 AM_SILENT_RULES([yes])
 
+# Initialize autoconf default compilation flags
+: ${CXXFLAGS=""}
+: ${CFLAGS="-g -O2"}
+
 # Checks for programs.
 AC_PSPDEV_TOOLCHAIN
 AC_PROG_CC
